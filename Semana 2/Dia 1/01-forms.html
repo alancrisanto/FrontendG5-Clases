@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <header>
+        Formulario de Registros
+    </header>
+
+    <main>
+        <section>
+            <h2>Ingreso de Datos</h2>
+            <form action="">
+                <label for="nombres">Nombres</label>
+                <input 
+                    type="text"
+                    id="nombres" 
+                    placeholder="Ej. Juan"
+                    value="Jorge"
+                >
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <input 
+                    type="text"
+                    id="apellidos" 
+                    placeholder="Ej. Perez Santos"
+                >
+                <br>
+                <label for="email">Email</label>
+                <input 
+                    type="email"
+                    id="email"
+                    placeholder="usuario@dominio.com"
+                >
+                <br>
+                <label for="password">Contraseña</label>
+                <input 
+                    type="password"
+                    id="password"
+                    placeholder="1234Qht"
+                >
+                <br>
+                <label for="edad">Edad</label>
+                <input 
+                    type="number" 
+                    id="edad"
+                    placeholder="18"
+                >
+                <label for="genero">Género</label>
+                <br>
+                <input type="radio" name="genero">Masculino
+                <input type="radio" name="genero">Femenino
+                <input type="radio" name="genero">Prefiero no compartir
+                <br>
+                <label for="">Intereses</label>
+                <br>
+                <input type="checkbox" value="next">Node Js
+                <input type="checkbox" value="cocina"> Cocina Para Desarrolladores
+                <input type="checkbox" value="juegos"> Videojuegos
+                <input type="checkbox" value="Juegos de Mesa"> Juegos de Mesa
+                <input type="checkbox" value="musica"> Música
+                <br>
+                <label for="">Cuidad</label>
+                <select name="" id="">
+                    <option selected disabled>Seleccione una opción</option>
+                    <!-- Disabled no permite seleccionar la primera opción -->
+                    <option value="AM">Amazonas</option>
+                    <option value="AN">Ancash</option>
+                    <option value="AP">Apurimac</option>
+                    <option value="AR">Arequipa</option>
+                    <option value="CU">Cusco</option>
+                    <option value="LI">Lima</option>
+                    <option value="PI">Piura</option>
+                    <option value="TA">Tacna</option>
+                </select>
+                <br>
+                <label for="">Distritos</label>
+                <input list="distritos">
+                <datalist id="distritos">
+                    <option value="Lima">Lima Cercado</option>
+                    <option value="Ate">Ate</option>
+                    <option value="Breña">Breña</option>
+                    <option value="Pueblo Libre">Pueblo Libre</option>
+                    <option value="San Miguel">San Miguel</option>
+                </datalist>
+                <br>
+                <label for="color">Color</label>
+                <input type="color">
+                <br>
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="nacimiento">
+                <br>
+                <label for="hora">Hora</label>
+                <input type="time" id="hora">
+                <br>
+                <label for="mensaje">Biografia</label>
+                <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
