@@ -1,0 +1,29 @@
+h1, article{
+    text-decoration: underline;
+}
+
+article p{
+    background-color: aquamarine;
+}
+
+ol > li{
+    color: rebeccapurple;
+}
+
+/*article > p indica que aplica cambios a todos los hijos directos de article, en este caso no aplica para p dentro de div*/
+article > p{
+    color: red;
+}
+
+#caja > span{
+    background-color:yellow;
+}
+
+/*nth-of-type( numero o indicador)*/
+tr:nth-of-type(odd){
+    background-color: chartreuse;
+}
+
+tr:nth-of-type(even){
+    background-color: lightblue;
+}
