@@ -21,6 +21,9 @@
                     id="nombres" 
                     placeholder="Ej. Juan"
                     value="Jorge"
+                    minlength="2"
+                    maxlength="15"
+                    required
                 >
                 <br>
                 <label for="apellidos">Apellidos</label>
@@ -28,6 +31,8 @@
                     type="text"
                     id="apellidos" 
                     placeholder="Ej. Perez Santos"
+                    pattern="[a-z]{1,}"
+                    required
                 >
                 <br>
                 <label for="email">Email</label>
@@ -49,6 +54,8 @@
                     type="number" 
                     id="edad"
                     placeholder="18"
+                    min="0"
+                    max="140"
                 >
                 <label for="genero">Género</label>
                 <br>
@@ -100,6 +107,10 @@
                 <label for="mensaje">Biografia</label>
                 <br>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpiar">
+                <button>Click</button>
 
             </form>
         </section>
