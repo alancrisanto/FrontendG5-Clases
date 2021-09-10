@@ -5,15 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+
+        .menu{
+            /* La mayoría de propiedades de flex se manejan en el papá */
+            height: 300px;
+            background-color: coral;
+            display: flex;
+            flex-direction: row;
+            /* Justify content me permite alinear elementos en horizontal */
+            /* center, space-around, space-between, space-evenly */
+            justify-content: space-evenly;
+            align-items: center;
+            /* align-items: center, flex-start, flex-end */
+            flex-wrap:nowrap;
+            /* wrap y nowrap */
+
+        }
+
+        .link{
+            background-color: aquamarine;
+            height: 50px;
+            width: 100px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .link3{
+            flex-grow: 3;
+        }
+
+        .link6{
+            flex-grow: 2;
+        }
+
+        .link1{
+            flex-grow: 4;
+            flex-shrink: 4;
+        }
+        
+    </style>
 </head>
 <body>
     <nav class="menu">
         <div class="link">link1</div>
         <div class="link">link2</div>
-        <div class="link">link3</div>
+        <div class="link link3">link3</div>
         <div class="link">link4</div>
         <div class="link">link5</div>
-        <div class="link">link6</div>
+        <div class="link link6">link6</div>
     </nav>
 </body>
 </html>
