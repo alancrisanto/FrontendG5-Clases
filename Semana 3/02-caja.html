@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <style>
+        /* Apply Reset  */
+        *{
+            padding: 0;
+            margin: 0;
+            /* El tamaño que indiquemos debe
+            el contenido, el padding y el borde */
+            box-sizing: border-box;
+            border: 1px solid blue;
+        }
+
+        h1{
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid red;
+            width: 300px;
+
+        }
+        section:nth-of-type(1){
+            width: 250px;
+            /*Nunca usar inline-block porque deja espaciado*/
+            display: inline-block;
+        }
+        section:nth-of-type(2){
+            width: 200px;
+            display: inline-block;
+        }
+
+        span{
+            display: inline;  /*Por defecto*/
+            /*Se acomoda al contenido por eso no le afecta el width 100px*/
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titulo</h1>
+        <h2>Subtítulo</h2>
+    </header>
+    <main>
+        <section>
+            <h2>Título de Seccion 1</h2>
+            <p>Lorem ipsum dolor, sit <span>amet</span> consectetur adipisicing.</p>
+        </section>
+        <section>
+            <h2>Titulo de Seccion 2</h2>
+        </section>
+    </main>
+</body>
+</html>

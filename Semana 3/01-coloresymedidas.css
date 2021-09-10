@@ -1,0 +1,31 @@
+*{
+    border: 1px solid rebeccapurple;
+}
+
+header{
+    height: 200px;
+    width: 400px;
+}
+
+h1{
+    color: peru;
+    width: 50%;
+    height: 20%;
+}
+
+h2{
+    /* color: #405dfc; */
+    color: #555;
+}
+
+h3{
+    color: rgb(255, 85, 197);
+}
+
+p{
+    background-color: hsl(500, 50%, 70%);
+    /* matiz, saturacion, iluminación */
+    /* grados, porcentaje, porcentaje */
+}
+
+/* MEDIDAS */
