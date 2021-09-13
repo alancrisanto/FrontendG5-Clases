@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            border: 1px solid blue;
+        }
+
+        h1{
+            background-color: blueviolet;
+            font-size: cal(14px + 3vw);
+        }
+
+        .titulares, .noticia{
+            border: 1px solid red;
+        }
+
+        .noticia{
+            max-width: 200px;
+        }
+
+        .titulares{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 760px) {
+            h1{
+                background-color: aquamarine;
+            }
+            .titulares{
+                border: 1px solid green;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            h1{
+                background-color: orangered;
+            }
+            .titulares{
+                flex-direction: column;
+            }
+
+            .noticia{
+                max-width: 100%;
+            }
+        }
+
+        header{
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <main>
+        <section class="titulares">
+            <div class="noticia">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, est!</p>
+            </div>
+            <div class="noticia">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, officia?</p>
+            </div>
+            <div class="noticia">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, mollitia.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
