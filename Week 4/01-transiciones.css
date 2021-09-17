@@ -1,0 +1,36 @@
+/* Estado 1 */
+.cuadrado{
+    width: 250px;
+    height: 250px;
+    border: 1px solid red;
+    background-color: steelblue;
+    /* Propiedades de transición */
+    transition-duration: 1000ms;
+    transition-delay: 500ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.02, 0.92, 1, 0.06)
+}
+
+.cuadrado:hover{
+    background-color: coral;
+    border-radius: 50%;
+    /* Transform */
+    /* Scale en una proporcion (ejex, ejey */
+    /* transform: scale(2, 2); */
+    transform: translate(100px, 200px );
+    /* transform: rotate(180deg); */
+    /* transform: skew(45deg); */
+    
+}
+
+#mifoto{
+    width: 400px;
+    /* Opacity: 0 a 1 (porcentual) */
+    opacity: 0.5;
+}
+
+#mifoto:hover{
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 0.5s;
+}

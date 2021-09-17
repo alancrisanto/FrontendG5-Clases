@@ -1,0 +1,44 @@
+.nave{
+    width: 150px;
+
+    animation-name: mi_animacion;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mi_animacion {
+    0%{
+        /* Inicio */
+        transform: translate(0, 0) rotate(90deg)
+    } /*Va a la derecha*/
+
+    25%{
+        transform: translate(500px, 0) rotate(90deg);
+    }
+
+    30%{
+        /* En la derecha gira */
+        transform: translate(500px, 0) rotate(180deg);
+    }
+
+    50%{
+        /* Ya girado a la derecha */
+        transform: translate(500px, 500px) rotate(180deg);
+    }
+
+    63%{
+        transform: translate(500px, 500px) rotate(270deg);
+    }
+
+    75%{
+        transform: translate(0, 500px) rotate(270deg);
+    }
+
+    89%{
+        transform: translate(0, 500px) rotate(360deg);
+    }
+
+    100%{
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
