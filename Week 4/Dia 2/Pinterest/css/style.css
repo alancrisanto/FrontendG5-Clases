@@ -57,7 +57,7 @@ input{
     flex-wrap: wrap;
     width: 900px;
     /* Para que entren los elemetnos */
-    height: 350vh;
+    height: 100vh;
 }
 
 .tile{
@@ -96,15 +96,17 @@ input{
     background-color: #efefef;
     padding: 10px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-.tile button{
+.tile .overlay button{
     background-color: #bd081d;
     font-weight: bold;
     color: white;
     padding: 10px;
     border-radius: 5px;
     border: 0;
+    cursor: pointer;
 }
 
 .tile-bottom{
