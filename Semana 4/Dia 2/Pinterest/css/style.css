@@ -57,7 +57,7 @@ input{
     flex-wrap: wrap;
     width: 900px;
     /* Para que entren los elemetnos */
-    height: 100vh;
+    height: 120vh;
 }
 
 .tile{
