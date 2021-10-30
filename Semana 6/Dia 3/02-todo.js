@@ -1,8 +1,4 @@
-
-
-
 let miForm = document.getElementById("formTodo");
-
 
 let ulTareas = document.getElementById("tareas");
 
