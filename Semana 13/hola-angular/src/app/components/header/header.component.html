@@ -1,0 +1,34 @@
+<p>{{texto}}</p>
+
+<ul>
+    
+    <li *ngFor="let act of actividades">
+        {{act}}
+    </li>
+</ul>
+
+<!-- ngIf en caos se aquiere la propiedad indicada y si no puede utilizar ng-template -->
+
+<div *ngIf="losQuiere else nolosQuiere">
+    Van a tener una noche buena
+</div>
+
+<ng-template #nolosQuiere>
+    Party Hard!!
+</ng-template>
+<br>
+
+<!-- PropertyBinding [] mandar datos del .ts hacia el .html -->
+<img [src]="urlImagen" alt="imagencita">
+<br>
+
+<!--  -->
+<input
+    [(ngModel)] = "nuevaActividad"
+    type="text" 
+    placeholder="Ej. Juan Perez"
+>
+
+<button (click)="agregarActividad()">
+    Agregar Actividad
+</button>

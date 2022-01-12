@@ -28,26 +28,26 @@ const CarritoContextProvider = (props) => {
     const limpiarCarrito = () => {
         setCarrito([]);
     };
-    // 1. Cuando cargue provider haremos que pregunte si hay algo en el localStorage
-    // 1.1. Si es que encuentra algo en el localStorage hace un setCarrito
 
+    //1. Cuando cargue el Provider haremos que pregunte si hay algo en el localStorage
+    //1.1 si es que encuentra algo en el localStorage pues hacemos un setCarrito
     useEffect(() => {
         const carritoStorage = JSON.parse(localStorage.getItem("carritoApp"));
-        if (carritoStorage.lenght > 0) {
-            setCarrito(carritoStorage)
+        if (carritoStorage.length > 0) {
+            setCarrito(carritoStorage);
         }
-    }, [])
+    }, []);
 
-    // 2. Cada vez que cambie carrito guardaremos la informacion el localStorage
-
+    //2. Pero cada vez que cambie carrito, guardaremos la información en el localStorage
     useEffect(() => {
-        localStorage.setItem("carritoApp", JSON.stringify(carrito))
-    }, [carrito])
+        localStorage.setItem("carritoApp", JSON.stringify(carrito));
+    }, [carrito]);
 
-    return <CarritoContext.Provider value={{ carrito, anadirACarrito, limpiarCarrito }}>{props.children}</CarritoContext.Provider>;
+    return (
+        <CarritoContext.Provider value={{ carrito, anadirACarrito, limpiarCarrito }}>
+            {props.children}
+        </CarritoContext.Provider>
+    );
 };
-
-
-
 
 export default CarritoContextProvider;
